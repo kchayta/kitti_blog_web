@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Page</title>
+<meta name="generator" content="WYSIWYG Web Builder 20 Trial Version - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="bootstrap/jquery-ui.min.css" rel="stylesheet">
+<link href="fontawesome6.min.css" rel="stylesheet">
+<link href="kittiweb.css" rel="stylesheet">
+<link href="blog.css" rel="stylesheet">
+<script src="jquery-3.7.1.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="wwb20.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $("a[href*='#list12LayoutGrid']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_list12LayoutGrid').offset().top-88 }, 600, 'easeOutExpo');
+   });
+   function onScrolllist12LayoutGrid()
+   {
+      var $obj = $("#wb_list12LayoutGrid");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrolllist12LayoutGrid();
+   $(window).scroll(function(event)
+   {
+      onScrolllist12LayoutGrid();
+   });
+   $("#list12Accordion").accordion(
+   {
+      event: 'click',
+      animate: 'easeOutSine',
+      icons: null,
+      active: false,
+      collapsible: true,
+      header: 'h4',
+      heightStyle: 'content'
+   });
+});
+</script>
+</head>
+<body>
+<a href="https://www.wysiwygwebbuilder.com" target="_blank"><img src="images/builtwithwwb20.png" alt="WYSIWYG Web Builder" style="position:absolute;left:868px;top:668px;margin: 0;border-width:0;z-index:250" width="88" height="31"></a>
+<div id="wb_list12LayoutGrid">
+<div id="list12LayoutGrid-overlay"></div>
+<div id="list12LayoutGrid">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_list12Heading" style="display:block;width:100%;z-index:4;">
+<h2 id="list12Heading">What's on this Blog page?</h2>
+</div>
+<div id="wb_list12Text1">
+<span style="color:#FFFFFF;font-family:Arial;font-size:19px;">Welcome to the blog page of Kitti Chaita! This space is dedicated to sharing my journey, experiences, and insights in working, learning, and participating in various events. Explore the following sections:</span>
+</div>
+<div id="wb_list12Accordion" style="display:block;width:100%;z-index:6;">
+<div id="list12Accordion">
+<h4><span class="ui-accordion-header-icon ui-icon"><svg class="icon-default" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M38 31 C39 30, 39 29, 39 28 L39 28 L39 28 C39 27, 39 26, 38 26 L24 12 L24 12 C23 11, 22 10, 21 11 C19 12, 18 13, 18 14 L18 42 L18 42 C18 44, 19 45, 21 45 C22 46, 23 46, 24 45 L38 31Z "/>
+</svg>
+<svg class="icon-active" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M25 38 C26 39, 27 39, 28 39 L28 39 L28 39 C29 39, 30 39, 30 38 L44 24 L44 24 C45 23, 46 22, 45 20 C44 19, 43 18, 42 18 L14 18 L14 18 C12 18, 11 19, 11 20 C10 22, 10 23, 11 24 L25 38Z "/>
+</svg>
+</span>Education</h4>
+<div>
+<div id="wb_list12Text2">
+<span style="color:#FFFFFF;">Discover my learning adventures and educational milestones.<br><br>Go to <a href="./education.html" class="block_button_style">Education Blog</a></span>
+</div>
+</div>
+<h4><span class="ui-accordion-header-icon ui-icon"><svg class="icon-default" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M38 31 C39 30, 39 29, 39 28 L39 28 L39 28 C39 27, 39 26, 38 26 L24 12 L24 12 C23 11, 22 10, 21 11 C19 12, 18 13, 18 14 L18 42 L18 42 C18 44, 19 45, 21 45 C22 46, 23 46, 24 45 L38 31Z "/>
+</svg>
+<svg class="icon-active" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M25 38 C26 39, 27 39, 28 39 L28 39 L28 39 C29 39, 30 39, 30 38 L44 24 L44 24 C45 23, 46 22, 45 20 C44 19, 43 18, 42 18 L14 18 L14 18 C12 18, 11 19, 11 20 C10 22, 10 23, 11 24 L25 38Z "/>
+</svg>
+</span>Working</h4>
+<div>
+<div id="wb_list12Text3">
+<span style="color:#FFFFFF;">Insights into my professional experiences and career journey.<br><br>Go to <a href="./working.html" class="block_button_style">Working Blog</a></span>
+</div>
+</div>
+<h4><span class="ui-accordion-header-icon ui-icon"><svg class="icon-default" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M38 31 C39 30, 39 29, 39 28 L39 28 L39 28 C39 27, 39 26, 38 26 L24 12 L24 12 C23 11, 22 10, 21 11 C19 12, 18 13, 18 14 L18 42 L18 42 C18 44, 19 45, 21 45 C22 46, 23 46, 24 45 L38 31Z "/>
+</svg>
+<svg class="icon-active" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M25 38 C26 39, 27 39, 28 39 L28 39 L28 39 C29 39, 30 39, 30 38 L44 24 L44 24 C45 23, 46 22, 45 20 C44 19, 43 18, 42 18 L14 18 L14 18 C12 18, 11 19, 11 20 C10 22, 10 23, 11 24 L25 38Z "/>
+</svg>
+</span>Event</h4>
+<div>
+<div id="wb_list12Text4">
+<span style="color:#FFFFFF;">Highlights from the events I’ve attended or organized.<br><br>Go to <a href="./event.html" class="block_button_style">Event Blog</a></span>
+</div>
+</div>
+<h4><span class="ui-accordion-header-icon ui-icon"><svg class="icon-default" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M38 31 C39 30, 39 29, 39 28 L39 28 L39 28 C39 27, 39 26, 38 26 L24 12 L24 12 C23 11, 22 10, 21 11 C19 12, 18 13, 18 14 L18 42 L18 42 C18 44, 19 45, 21 45 C22 46, 23 46, 24 45 L38 31Z "/>
+</svg>
+<svg class="icon-active" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M25 38 C26 39, 27 39, 28 39 L28 39 L28 39 C29 39, 30 39, 30 38 L44 24 L44 24 C45 23, 46 22, 45 20 C44 19, 43 18, 42 18 L14 18 L14 18 C12 18, 11 19, 11 20 C10 22, 10 23, 11 24 L25 38Z "/>
+</svg>
+</span>Skill Competitions</h4>
+<div>
+<div id="wb_list12Text5">
+<span style="color:#FFFFFF;">Updates and experiences from various skill-based competitions I’ve joined.<br><br>Go to <a href="./skill_competitions.html" class="block_button_style">Skill Competitions Blog</a></span>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_menu6LayoutGrid">
+<div id="menu6LayoutGrid">
+<div class="col-1">
+<div id="wb_menu6Image" style="display:inline-block;width:71px;height:71px;z-index:11;">
+<img src="images/wysywyg_logo512.png" id="menu6Image" alt="" width="71" height="71">
+</div>
+<div id="wb_menu6Heading" style="display:inline-block;width:323px;height:32px;z-index:12;">
+<h1 id="menu6Heading">Kitti Blog</h1>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_menu6Menu" style="display:inline-block;width:273px;height:66px;z-index:13;">
+<ul id="menu6Menu" role="menubar" class="nav">
+<li role="menuitem" class="nav-item firstmain"><a class="nav-link menu6Menu-effect" href="./index.html" target="_self">Home</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link menu6Menu-effect" href="" target="_self">About</a>
+</li>
+</ul>
+
+</div>
+<div id="wb_menu6Button" style="display:inline-block;width:156px;height:70px;z-index:14;">
+<a class="ui-button ui-corner-all" id="menu6Button" href="./blog.html" style="width:100%;height:100%;">Blog</a>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_footer12LayoutGrid1" style="z-index: 10000 !important;">
+<div id="footer12LayoutGrid1">
+<div class="row">
+<div class="col-1">
+<div id="wb_footer12LayoutGrid2" style="z-index: 10000 !important;">
+<div id="footer12LayoutGrid2">
+<div class="row">
+<div class="col-1">
+<div id="wb_footer12Breadcrumb1" style="display:block;width:100%;z-index:15;vertical-align:top;">
+<ul id="footer12Breadcrumb1">
+<li><a href="http://"><i class="fa fa-location-dot"></i>Silom rd., Bangrak, Bangkok</a></li>
+</ul>
+
+</div>
+<div id="wb_footer12Breadcrumb2" style="display:block;width:100%;z-index:16;vertical-align:top;">
+<ul id="footer12Breadcrumb2">
+<li><a href="http://"><i class="fa fa-phone"></i>+66 64 312 xxxx</a></li>
+</ul>
+
+</div>
+<div id="wb_footer12Breadcrumb3" style="display:block;width:100%;z-index:17;vertical-align:top;">
+<ul id="footer12Breadcrumb3">
+<li><a href="http://"><i class="fa fa-envelope"></i>s66122519032@ssru.ac.th</a></li>
+</ul>
+
+</div>
+</div>
+<div class="col-2">
+<div id="wb_footer12Text1">
+<p>Follow us on social media</p>
+</div>
+<div id="wb_footer12Icon1" style="display:inline-block;width:24px;height:28px;text-align:center;z-index:19;">
+<a href="https://www.facebook.com/sgtton.tongkhee.9" target="_blank"><div id="footer12Icon1"><i class="fa fa-brands fa-facebook"></i></div></a>
+</div>
+<div id="wb_footer12Icon2" style="display:inline-block;width:24px;height:28px;text-align:center;z-index:20;">
+<a href="./index.html"><div id="footer12Icon2"><i class="fa fa-brands fa-x-twitter"></i></div></a>
+</div>
+<div id="wb_footer12Icon3" style="display:inline-block;width:24px;height:28px;text-align:center;z-index:21;">
+<a href="./index.html"><div id="footer12Icon3"><i class="fa fa-brands fa-linkedin-in"></i></div></a>
+</div>
+<div id="wb_footer12Icon4" style="display:inline-block;width:24px;height:28px;text-align:center;z-index:22;">
+<a href="./index.html"><div id="footer12Icon4"><i class="fa fa-rss"></i></div></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_footer12Text2">
+<p>Copyright © WYSIWYG Web Builder</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
